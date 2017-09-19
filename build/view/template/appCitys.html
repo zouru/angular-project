@@ -1,0 +1,8 @@
+<div class="app-citys-wrapper">
+    <dl>
+        <dt>热门城市</dt>
+        <div class="citys">
+            <dd ng-click="changeCity(city.id)" ng-repeat="city in citys" ng-class="{active:city.id==nowId}">{{city.name}}</dd>
+        </div>
+    </dl>
+</div>

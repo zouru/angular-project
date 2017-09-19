@@ -1,0 +1,30 @@
+.searchBox{
+    display: flex;
+    height:@base*40vw;
+    line-height: @base*40vw;
+    border-bottom: 1px solid @gray;
+    div{
+        border-right: 1px solid @gray;
+        text-align: center;
+        width:@base*80vw;
+    }
+    input{
+        flex:1;
+        text-indent: 5px;
+        outline: none;
+    }
+    button{
+        width:@base*80vw;
+        text-align: center;
+    }
+}
+#noData{
+    position: fixed;
+    top:@base*80vw;
+    height:@base*40vw;
+    line-height: @base*40vw;
+    left:0;
+    width:100%;
+    text-align: center;
+    color:@green;
+}

@@ -1,0 +1,26 @@
+<div class="companyDetail">
+    <head-bar title="公司职位"></head-bar>
+    <company-info data="company"></company-info>
+    <!-- 职位分类 -->
+    <div class="job-class-wrapper">
+        <div class="class-wrapper">
+            <span class="title">职位分类</span>
+            <div class="classes">
+                <span ng-class="{active:nowIndex==$index}" ng-click="changeList($index)" ng-repeat="pc in company.positionClass">{{pc.name}}</span>
+            </div>
+
+        </div>
+        <ul class="job-list-wrapper">
+            <li ng-repeat="job in jobList">
+                <div class="info">
+                    <h4>{{job.name}}</h4>
+                    <time>{{job.createdDate}}</time>
+                </div>
+                <div class="money">
+                    {{job.salary}}
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</div>

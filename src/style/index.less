@@ -1,0 +1,48 @@
+@import './variable.less';
+@import './template/header.less';
+@import './template/footer.less';
+@import './template/position.less';
+@import './template/headBar.less';
+@import './positionDetail.less';
+@import './template/positionInfo.less';
+@import './companyDetail.less';
+@import './template/company.less';
+@import 'search.less';
+@import 'my.less';
+@import 'login.less';
+@import './template/appCitys.less';
+@import './template/keywords.less';
+@import './template/fourButton.less';
+@import './template/myInfo.less';
+@import './dilivered.less';
+@import './animate.css';
+.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+/* The finishing CSS styles for the enter animation */
+.ng-enter-active {
+  opacity:1;
+}
+//已经把根节点的fontSize设置成了屏幕宽度的 1/10，所以可以用一下函数将px换算成rem
+.fs(@px){
+    font-size:unit(@px / 37.5,rem);
+}
+.w(@px){
+    width:unit(@px / 37.5,rem);
+}
+
+.h(@px){
+    height:unit(@px / 37.5,rem);
+}
+.h(@px){
+    line-height: unit(@px/37.5,rem);
+}
+.mt(@px){
+    margin-top:  unit(@px/37.5,rem);
+}
+body{
+    padding:0;
+    margin:0;
+    .fs(16)
+}

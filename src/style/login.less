@@ -1,0 +1,64 @@
+.login-page{
+    background: #009F6E;
+    height:100vh;
+    padding:@base*20vw;
+    .login-reg-box{
+        width:100%;
+        background: #fff;
+        border-radius: 5px;
+        .row{
+            margin:0 auto;
+            width:100%;
+            height:@base*50vw;
+            border-bottom: 1px solid @gray;
+            text-align: center;
+            position: relative;
+            input{
+                width:90%;
+                margin:0 auto;
+                height:100%;
+                text-indent: 10px;
+                border:none;
+                outline: none;
+
+            }
+            p.validation-invalid{
+                position: absolute;
+                right:5px;
+                top:10px;
+                color:red;
+            }
+            .check{
+                width:@base*200vw;
+            }
+        }
+    }
+    .loginBtn{
+        width:100%;
+        height:@base*40vw;
+        line-height: @base*40vw;
+        text-align: center;
+        background-color: #00D1A2;
+        border-radius: 5px;
+        color:white;
+        font-size: @base*18vw;
+        margin-top: @base*20vw;
+    }
+    .msg{
+        font-size: @base*12vw;
+        color:#00D1A2;
+        margin-top: @base*20vw;
+    }
+    .regBtn{
+        width:100%;
+        height:@base*40vw;
+        line-height: @base*40vw;
+        text-align: center;
+        background-color: #009E6E;
+        border-radius: 5px;
+        color:white;
+        border:1px solid #00ECC4;
+        font-size: @base*18vw;
+        margin-top: @base*20vw;
+    }
+}

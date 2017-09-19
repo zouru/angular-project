@@ -1,0 +1,36 @@
+@import '../variable.less';
+.header-wrapper{
+    .header{
+        background-color: @headBgColor;
+        text-align: center;
+
+        color:white;
+        height:@base*40vw;
+        line-height: @base*40vw;
+        font-size: @base*20vw;
+        font-weight: 700;
+    }
+    .login-wrapper{
+        height:@base*45vw;
+        padding:0 @base*16vw;
+        line-height: @base*45vw;
+        font-size: @base*14vw;
+        display: flex;
+        justify-content: space-between;
+        span{
+            display: block;
+            &:first-child{
+                color:rgba(7,17,27,0.6)
+            }
+            &:last-child{
+                border-radius: 10px;
+                color:#00C094;
+                height:@base*30vw;
+                line-height:@base*30vw;
+                margin-top: @base*7vw;
+                padding:0 10px;
+                background-color:rgba(7,17,27,0.1);
+            }
+        }
+    }
+}

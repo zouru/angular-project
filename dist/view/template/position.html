@@ -1,0 +1,14 @@
+<div class="position-wrapper">
+    <ul>
+        <li ng-repeat="item in data" ui-sref="position({id:item.id})">
+            <img ng-src="{{item.imageUrl}}" alt="">
+            <div class="info">
+                <h4>{{item.companyName}}</h4>
+                <div class="title"><span>{{item.job}}[{{item.cityName}}]</span><span>{{item.salaryName}}</span></div>
+                <time>今天 19:24</time>
+            </div>
+        </li>
+
+
+    </ul>
+</div>

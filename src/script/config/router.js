@@ -1,0 +1,49 @@
+
+angular.module('app').config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+    $stateProvider
+        .state('main',{
+            url:'/main',
+            templateUrl:'view/main.html',
+            controller:'mainCtrl'//命名规则，页面名+ctrl
+        })
+        .state('search',{
+            url:'/search',
+            templateUrl:'view/search.html',
+            controller:'searchCtrl'//命名规则，页面名+ctrl
+        })
+        .state('my',{
+            url:'/my',
+            templateUrl:'view/my.html',
+            controller:'myCtrl'//命名规则，页面名+ctrl
+        })
+        .state('position',{
+            url:'/position/:id',
+            templateUrl:'view/positionDetail.html',
+            controller:'positionDetailCtrl'//命名规则，页面名+ctrl
+        })
+
+        .state('company',{
+            url:'/company/:cid',
+            templateUrl:'view/companyDetail.html',
+            controller:'companyDetailCtrl'//命名规则，页面名+ctrl
+        })
+        .state('login',{
+            url:'/login',
+            templateUrl:'view/login.html',
+            controller:'loginCtrl',
+            replace:true
+        })
+        .state('myInfo',{
+            url:'/myInfo',
+            templateUrl:'view/myInfo.html',
+            controller:'myInfoCtrl',
+            replace:true
+        })
+        .state('dilivered',{
+            url:'/dilivered',
+            templateUrl:'view/dilivered.html',
+            controller:'diliveredCtrl',
+            replace:true
+        })
+    $urlRouterProvider.otherwise('main');
+}])

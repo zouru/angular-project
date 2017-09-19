@@ -1,0 +1,28 @@
+.app-citys-wrapper{
+    position: fixed;
+    top:@base*40vw;
+    bottom: @base*45vw;
+    background: #fff;
+    width:100%;
+    z-index: 10;
+    padding:@base*16vw;
+    dl{
+        dt{
+            border-bottom: 1px solid @gray;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .citys{
+            display: flex;
+            dd{
+                flex:1;
+                height:@base*40vw;
+                line-height: @base*40vw;
+                text-align: center;
+                &.active{
+                    background: @gray;
+                }
+            }
+        }
+    }
+}

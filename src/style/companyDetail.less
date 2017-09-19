@@ -1,0 +1,52 @@
+.job-class-wrapper{
+
+    .class-wrapper{
+        padding:@base*16vw;
+        border-bottom: 1px solid @gray;
+        border-top: 1px solid @gray;
+        .title{
+            font-size: @base*12vw;
+            color:#333;
+        }
+        .classes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            &:after{
+                content:'';
+                flex:1;
+            }
+            span{
+                margin-top: 10px;
+                width:@base*60vw;
+                text-align: center;
+                line-height: @base*30vw;
+                height:@base*30vw;
+                background: @gray;
+                border-radius: 10px;
+                &.active{
+                    background-color: @green;
+                    color:#fff;
+                }
+
+            }
+        }
+    }
+    .job-list-wrapper{
+        margin:0;
+        padding:0;
+        li{
+            list-style: none;
+            padding:@base*3vw @base*16vw;
+            border-bottom: 1px solid @gray;
+            display: flex;
+            justify-content: space-between;
+            .money{
+                vertical-align: middle;
+                line-height: @base*60vw;
+                font-size: @base*16vw;
+                color:@green;
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+<head-bar is-left-show="1" title="职位描述"></head-bar>
+
+<position-info data="job"></position-info>
+<company-info data="company"></company-info>
+<h4 class="positionDescription">职位描述</h4>
+<div class="content-wrapper">
+    {{job.description}}
+</div>
+<button class="btn" ui-sref="{{isLogin?'main':'login'}}">{{isLogin?'投个简历':'去登录'}}</button>
